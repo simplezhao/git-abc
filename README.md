@@ -155,7 +155,7 @@ git push origin main
 
 ![image-20210331232632195](https://oss.smart-lifestyle.cn/file/lwto3.png)
 
-
+## 分支管理
 
 ### 创建新的分支
 
@@ -169,4 +169,19 @@ git checkout hotfix
 ### 分支合并
 
 在上一步操作，因为系统出现bug，紧急创建一个分支，然后在这个分支上进行修复，修改测试验证完毕后，从hotfix分支合并到main分支
+
+```bash
+git checkout main
+git merge hotfix
+```
+
+![image-20210331235235214](https://oss.smart-lifestyle.cn/file/8q60h.png)
+
+### 分支删除
+
+* `git branch -d <branch>`
+
+```bash
+git branch -d hotfix
+```
 
