@@ -93,3 +93,46 @@ git status
 git add .
 ```
 
+添加成功后，显示准备提交的文件
+
+![image-20210331230400289](https://oss.smart-lifestyle.cn/file/2m0ge.png)
+
+### 提交文件
+
+* `git commit -a` 在默认编辑器内增加本次提交内容
+* `git commit -m <message>`简短提交
+
+```python
+git commit -m "update readme file and add new readme for english version"
+```
+
+![image-20210331230900239](https://oss.smart-lifestyle.cn/file/xkx4s.png)
+
+### 推送到远程分支
+
+* `git push <shortname> <branch>`
+
+```bash
+git push origin main
+```
+
+![image-20210331231029318](https://oss.smart-lifestyle.cn/file/136q4.png)
+
+### 查看提交记录
+
+* `git log`
+
+```bash
+git log
+```
+
+![image-20210331231130554](https://oss.smart-lifestyle.cn/file/wvarp.png)
+
+## 代码合并
+
+多人开发同一个项目，需要共同维护同一个代码库，假如每个人负责独立的模块，不会涉及到代码冲突
+
+某次提交时，提示如下问题
+
+
+
