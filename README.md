@@ -134,5 +134,39 @@ git log
 
 某次提交时，提示如下问题
 
+![image-20210331232246543](https://oss.smart-lifestyle.cn/file/d62zw.png)
 
+这是因为远程分支要优先本地的分支，需要先执行git pull，然后在执行git push命令
+
+```bash
+git pull origin main
+git push origin main
+```
+
+执行pull时会提示Merge信息
+
+![image-20210331232418971](https://oss.smart-lifestyle.cn/file/xq0ww.png)
+
+完成并退出编辑后，提示pull信息
+
+![image-20210331232514825](https://oss.smart-lifestyle.cn/file/ct9wp.png)
+
+再次执行git push origin main，显示提交成功
+
+![image-20210331232632195](https://oss.smart-lifestyle.cn/file/lwto3.png)
+
+
+
+### 创建新的分支
+
+* `git branch <branch>`
+
+```bash
+git branch hotfix
+git checkout hotfix
+```
+
+### 分支合并
+
+在上一步操作，因为系统出现bug，紧急创建一个分支，然后在这个分支上进行修复，修改测试验证完毕后，从hotfix分支合并到main分支
 
